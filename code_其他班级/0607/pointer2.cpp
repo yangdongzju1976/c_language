@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(  ) 
+{
+	int  a, b, *p1, *p2 ; 
+	a=100;
+	b=10; 
+	printf("\np1指向变量a,p2指向变量b\n");
+	p1=&a;  //*p1==a
+	p2=&b;  //*p2==b
+	printf("\na=%d, b=%d\n",*&a, *&b); //*&a《----》a
+	printf("*p1=%d, *p2=%d\n", *p1, * p2); //
+	printf("\n&a=%x,&b=%x\n",&a, &b); 
+	printf("p1=%x, p2=%x\n", p1, p2); 
+	printf("&p1=%x, &p2=%x\n", &p1, &p2); //指针变量存储的是地址，它自己也有地址。
+}

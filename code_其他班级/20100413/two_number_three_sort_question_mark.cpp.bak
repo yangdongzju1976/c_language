@@ -1,0 +1,8 @@
+#include <stdio.h>
+//输入两个数，判断大于等于关系
+int main(int argc, char *argv[])
+{
+	printf("Hello, world\n");
+	
+	return 0;
+}

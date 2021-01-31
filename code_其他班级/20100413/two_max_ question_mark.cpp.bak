@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+	int a,b,max;
+	printf("\n输入两个数");
+	scanf("%d%d",&a,&b);
+
+	max=a>b?b*5:a*5;//  max =a<b?a:b
+
+
+	printf("\n最小值的5倍 %d",max);	
+	
+	return 0;
+}

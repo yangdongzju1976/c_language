@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char *argv[])
+{
+	int a[10][5];
+	int i,j;
+	int sum;
+	//通过随机函数对数组a赋初值
+	for (i=0;i<10 ;i++ )
+		for (j=0;j<5 ;j++ )
+			a[i][j]=rand()%100;
+	printf("\n输出数组a:\n");
+	printf("0\t1\t2\t3\t4\t汇总\n");
+	for (i=0;i<10 ;i++ )
+	{
+		sum =0;
+		for (j=0;j<5 ;j++ )
+		{
+			printf("%d\t",a[i][j]);
+			sum+=a[i][j];
+		}
+		printf("%d",sum);
+		printf("\n");
+		
+		}
+	
+	
+
+		
+	return 0;
+}

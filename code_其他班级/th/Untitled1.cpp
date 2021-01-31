@@ -1,0 +1,11 @@
+#include <stdio.h>   
+	void main()                                                                                                                                                         {                                                                                                                                                                   int a;                                                                                                                                                              char c;                                                                                                                                                             scanf("%3d%3c",&a,&c);                                                                                                                                              printf("%d,%c",a,c);                                                                                                                            #include<stdio.h>                                                                                                                                                   void main()                                                                                                                                                         {                                                                                                                                                                   int a;                                                                                                                                                              char c;                                                                                                                                                             scanf("%3d%3c",&a,&c);                                                                                                                                              printf("%d,%c",a,c);                                                                              
+int main()
+	{
+
+	int a;
+	char c;
+	scanf("%3d%3c",&a,&c);
+	printf("%d,%c",a,c);
+	return 0;
+}

@@ -1,0 +1,39 @@
+//求矩阵中的最大值
+#include <stdio.h>
+#include <stdlib.h> 
+#include <time.h>
+int  max_value(int  array[ ][4],int t);
+int main()
+{
+	int i,j;
+	int a[10][4];
+	srand( (unsigned)time( NULL ) ); 
+	//srand(111);//随机数
+	for(i=0;i<10;i++) 
+		for (j=0;j<4 ;j++ )
+		{
+		a[i][j]=rand()%1000;
+		}
+
+	
+	printf("\n输出数组a:\n");
+	for(i=0;i<10;i++) 
+	{
+		for (j=0;j<4 ;j++ )
+		{
+		printf("%d\t",a[i][j]);
+		}
+		printf("\n");
+	}
+	//int a[3][4]={{1,3,5,7},{2,4,6,8},{15,17,34,12}};
+
+	printf("\n最大值是： %d\n",max_value(a,10));
+}
+int  max_value(int  array[][4],int t)
+{ int i,j,k,max;
+   max=array[0][0];
+   for(i=0;i<t;i++)
+      for(j=0;j<4;j++)
+         if(array[i][j]>max) max=array[i][j];
+   return(max);
+}

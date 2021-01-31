@@ -1,0 +1,30 @@
+#include "stdio.h"
+#include "windows.h"  //Sleep()
+int main()
+{
+	int i;
+	
+	for (i=1;i<10 ;i++ )
+	{
+		//Sleep(200);
+		system("cls");
+		printf("%d",i);
+	}
+	system("color 70");
+	for (i=8;i>0 ;i-- )
+	{
+		Sleep(200);
+		system("cls");
+		printf("\n        %d",i);
+	}
+	/*for (i=100;i>0 ;i-- )
+	{
+		printf("\ni=%d",i);
+	}
+	/*for (i=0;i<50 ;i++ )
+	{
+		printf("\n*");
+	}
+	*/
+	printf("\n\n\n\n");
+}
